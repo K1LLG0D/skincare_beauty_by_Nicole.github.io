@@ -1,0 +1,748 @@
+/*
+ * Copyright © Amazon.com and Affiliates: This deliverable is considered Developed Content as defined in AWS Services Terms and the SOW between the parties dated October, 31. 2025.
+ */
+
+.main {
+  overflow: hidden;
+}
+
+/*메인 배너*/
+.banner-slider {
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.swiper {
+  position: relative;
+}
+
+.banner-card {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  /* margin-right: 5%; */
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.banner-info h2 {
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  width: 228px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  white-space: normal;
+}
+
+.banner-info p {
+  margin: 0 auto;
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  color: #fff;
+  width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/*메인 배너 하단 컨트롤러*/
+.custom-controls {
+  margin-top: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.pause-btn,
+.plus-btn {
+  border: none;
+  background: none;
+  color: #444444;
+  font-size: 8px;
+  padding: 0;
+}
+
+.pause-btn {
+  height: 22px;
+}
+
+.plus-btn {
+  line-height: 0.25em;
+  font-size: 10px;
+}
+.pause-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.custom-pagination {
+  color: #767676;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  padding: 0 6px;
+  margin-left: 3.34px;
+  flex-basis: min-content;
+  font-size: 5.676px;
+  font-weight: 400;
+  border-radius: 10.3px;
+  border: 0.5px solid #f0f0f0;
+}
+
+.custom-pagination svg {
+  margin-top: 0.1em;
+}
+
+.plus-btn img {
+  width: 7px;
+}
+
+.custom-current {
+  color: #111;
+}
+
+.custom-total {
+  color: #767676;
+}
+
+.custom-current,
+.custom-total {
+  margin: 0 0.3em;
+  font-size: 9px;
+  font-weight: 400;
+  width: 12px;
+}
+
+/*상품*/
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.carousel-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.m-container .carousel-header img {
+  width: 6px;
+  cursor: pointer;
+}
+
+.category-tabs-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.category-tabs-list::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tabs-item {
+  padding: 8px 16px;
+  border: 1px solid #e5e5ec;
+  border-radius: 100px;
+  background: #fff;
+  color: #767676;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.category-tabs-item.is-active {
+  border-color: #111;
+  font-weight: 600;
+  color: #111;
+}
+
+/*메인 띠배너*/
+.band-banner {
+  width: 100%;
+  position: relative;
+}
+
+.band-banner .swiper-slide {
+  position: relative;
+}
+
+.band-banner .banner-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.band-banner .banner-content img {
+  width: 100%;
+  height: 100%;
+  min-height: 70px;
+  object-fit: cover;
+  display: block;
+}
+
+.band-banner .banner-text {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  margin-left: 32px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.band-banner .banner-text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.45px;
+  color: #fff;
+}
+
+.band-banner .banner-text p {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+.band-banner .swiper-pagination {
+  position: absolute;
+  top: 8px;
+  left: auto;
+  right: 17px;
+  text-align: right;
+  width: max-content;
+  height: max-content;
+  z-index: 10;
+}
+
+.band-banner .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.band-banner .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.free-gift-banner .banner-text {
+  margin-left: 16px;
+}
+
+/*promotion deal*/
+.promotion-deal {
+  margin-bottom: 44px;
+}
+.promotion-banner {
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.promotion-banner .banner-content {
+  position: relative;
+}
+
+.promotion-banner .banner-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.promotion-banner .banner-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.promotion-banner .banner-text h2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+}
+
+.promotion-banner .banner-text p {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
+.promotion-banner .product-info a {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 16px 0;
+  gap: 6px;
+}
+
+.promotion-banner .product-info-card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.promotion-banner .product-thumb {
+  width: 110px;
+}
+
+.promotion-banner .product-desc {
+  margin-left: 16px;
+  width: 100%;
+}
+
+.promotion-banner .product-desc .brand {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.promotion-banner .product-desc p {
+  margin: 4px 0 0.6em 0;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  width: calc(100% - 16px);
+}
+
+.promotion-banner .price-box .discount {
+  color: #fc123e;
+  font-weight: 600;
+  letter-spacing: -0.325px;
+  font-size: 13px;
+}
+
+.promotion-banner .price-box .original-price {
+  color: #767676;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.promotion-banner .price-box .final-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.35px;
+}
+
+.promotion-banner .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.promotion-banner .swiper-pagination-bullet-active {
+  background: #111;
+}
+
+.promotion-banner .swiper-button-prev {
+  left: 0;
+}
+
+.promotion-banner .swiper-button-next {
+  right: 0;
+}
+
+.promotion-banner.food .swiper-button-prev,
+.promotion-banner.food .swiper-button-next {
+  top: 29% !important;
+}
+
+.promotion-banner .swiper-button-prev::after,
+.promotion-banner .swiper-button-next::after {
+  font-size: 1.5em;
+}
+
+.promotion-deal .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 150px;
+  height: 20px;
+}
+
+.promotion-banner .banner-content .swiper-button-prev,
+.promotion-banner .banner-content .swiper-button-next {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  color: #fff;
+  z-index: 10;
+}
+
+/*beauty insider*/
+.beauty-insider {
+  background: #111;
+  color: white;
+  overflow: hidden;
+  padding: 24px 0;
+}
+
+.beauty-insider .carousel-header {
+  margin-bottom: 13px;
+}
+
+.beauty-insider .carousel-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.beauty-insider .carousel-arrow {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.beauty-insider .beauty-insider-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.beauty-insider .beauty-insider-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.beauty-insider .video-card {
+  flex: 0 0 auto;
+  width: 147px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.beauty-insider .video-card:first-child {
+  margin-left: 16px;
+}
+
+.beauty-insider .video-card:last-child {
+  margin-right: 16px;
+}
+
+.beauty-insider .video-card figure {
+  margin: 0;
+  position: relative;
+}
+
+.beauty-insider .video-thumb {
+  width: 100%;
+  display: block;
+}
+
+.beauty-insider .video-time {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 8px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.beauty-insider .video-product {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.beauty-insider .product-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.beauty-insider .product-desc .brand {
+  display: block;
+  font-size: 8.64px;
+  font-weight: 600;
+  letter-spacing: -0.216px;
+}
+
+.beauty-insider .product-desc p {
+  font-size: 8.64px;
+  font-weight: 400;
+  letter-spacing: -0.216px;
+  margin: 2px 0;
+  color: #444;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.beauty-insider .price {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.252px;
+  color: #000;
+}
+
+/*best brand*/
+.best-brand-section .best-brand-img {
+  width: 100%;
+}
+
+.best-brand-section .best-brand-desc {
+  margin-top: 6.5px;
+}
+
+.best-brand-section .best-brand-desc .brand {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.best-brand-section .best-brand-desc p {
+  font-size: 12px;
+  margin: 5px 0 15px 0;
+  color: #999;
+  font-weight: 400;
+}
+
+/*recommendation*/
+.recommendation {
+  position: relative;
+  height: 519px;
+}
+
+.recommendation .recommendation-img {
+  width: 100%;
+}
+
+.recommendation .recommendation-product-section {
+  position: absolute;
+  left: 16px;
+  width: calc(100% - 38px);
+  padding: 18px 0 5px 21px;
+  bottom: 1%;
+}
+
+.recommendation .recommendation-desc .brand {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.recommendation .recommendation-desc p {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 0 16px;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+/* Magazine */
+.magazine-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1%;
+}
+
+.magazine-item {
+  width: 48%;
+  margin: 10px 1%;
+}
+
+.magazine-item img {
+  width: 100%;
+}
+
+.magazine-item h3 {
+  margin-top: 3px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.magazine-item p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #999999;
+}
+
+/*full view*/
+.main-banner-full-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+  overflow-y: scroll;
+}
+
+.main-banner-full-view.active {
+  transform: translateY(0);
+}
+
+.main-banner-full-view-top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.full-view-title {
+  font-size: 16px;
+}
+
+.main-banner-full-view-top .side-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.full-view-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 7px;
+  padding: 0 10px;
+  overflow-y: auto;
+}
+
+.full-view-section .banner-card {
+  width: calc(50% - 3.5px);
+  height: fit-content;
+  border-radius: 7.6px;
+  margin-right: 0;
+}
+
+.full-view-section .banner-card:last-child {
+  padding-bottom: 7px;
+}
+
+.full-view-section .banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.full-view-section .banner-info {
+  width: auto;
+  padding: 0 0 15px 16px;
+  text-align: left;
+}
+
+.full-view-section .banner-info h2 {
+  font-size: 14px;
+  font-weight: 700;
+  width: 145px;
+  margin: 0;
+}
+
+.full-view-section .banner-info p {
+  font-size: 10px;
+  margin: 0;
+  width: 123px;
+}
+
+/* kpop 페이지 */
+.kpop-main .banner-slider {
+  margin-bottom: 31px;
+}
+
+.header-search.kpop-search {
+  background-color: #202020;
+  border-radius: 8px;
+  border: 1px solid #131313;
+}
+
+.kpop-search .search-input {
+  border: none;
+  background: none;
+}
+
+.kpop-search .search-input-placeholder {
+  color: #fff;
+}
+
+/* food 페이지 */
+.food-main .banner-slider {
+  margin-bottom: 31px;
+}
+
+.food-main .promotion-deal .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 275px;
+}
+
+/* 앱 다운로드 팝업 */
+.app-download-popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(16, 16, 16, 0.35);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.app-download-popup-content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.app-download-popup-img {
+  width: 100%;
+  display: block;
+}
+
+.popup-footer {
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 16px 22px 25px;
+}
+
+.popup-footer .checkbox-label {
+  color: #7e7e7e;
+}
+
+.popup-footer .popup-close {
+  color: #030303;
+  font-weight: 400;
+  background: none;
+  border: none;
+}
